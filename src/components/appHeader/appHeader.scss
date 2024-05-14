@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+.app__header {
+    .tabs {
+        display: flex;
+        width: 330px;
+        justify-content: space-between;
+        align-items: end;
+        .btn-tab {
+            height: 30px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px 5px 0 0;
+            font-size: 12px;
+            background-color: var(--white);
+            color: var(--greyDark);
+            opacity: 0.8;
+            box-shadow: 0.5px -0.5px 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            &:hover {
+                color: var(--primary);
+            }
+            &--active {
+                opacity: 1;
+                color: var(--primary);
+                background-color: var(--greyLight-1);
+            }
+        }
+    }
+}
