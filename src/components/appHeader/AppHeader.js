@@ -1,16 +1,21 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 // import classNames from "classnames";
 import "./appHeader.scss";
 const AppHeader = () => {
     return (
         <header className="app__header">
-            <div className="tabs">
-                <button className="btn-tab btn-tab--active">
-                    <p>Работа с картинками</p>
-                </button>
-                <button className="btn-tab">
-                    <p>Работа со свойствами</p>
-                </button>
-            </div>
+            <ul className="nav nav-tabs">
+                <li className="nav-item">
+                    <a className="nav-link active" aria-current="page" href="#">
+                        Работа с картинками
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#">
+                        Работа со свойствами
+                    </a>
+                </li>
+            </ul>
         </header>
     );
 };
