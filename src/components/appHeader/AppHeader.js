@@ -6,12 +6,12 @@ const AppHeader = () => {
         <header className="app__header">
             <ul className="nav nav-tabs">
                 <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">
+                    <a className="nav-link" aria-current="page" href="#">
                         Работа с картинками
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link active" href="#">
                         Работа со свойствами
                     </a>
                 </li>

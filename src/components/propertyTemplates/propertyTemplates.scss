@@ -1,0 +1,12 @@
+.propertyTemplates {
+    li {
+        display: flex;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+        }
+    }
+    &__item {
+        font-size: 0.8rem;
+    }
+}

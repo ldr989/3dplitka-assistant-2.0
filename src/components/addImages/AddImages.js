@@ -1,10 +1,15 @@
-import "./addImages.scss";
+import TextHeader from "../textHeader/TextHeader";
+import TextSubHeader from "../textSubHeader/TextSubHeader";
 
-const AddImages = ({ h2Header, h3Header, Form }) => {
+const AddImages = ({ header, subHeader, Form }) => {
+    const mainHeader =
+        header !== "" ? (
+            <TextHeader text={header} className={"text-primary"} />
+        ) : null;
     return (
-        <div className="addImages mt-3">
-            <h6 className="text-primary">{h2Header}</h6>
-            <div className="addImages__subheader mt-3">{h3Header}</div>
+        <div className="addImages">
+            {mainHeader}
+            <TextSubHeader text={subHeader} className={"mt-3"} />
             <Form />
         </div>
     );

@@ -2,7 +2,9 @@
     .container {
         padding: 0;
         main {
-            padding: 0 10px;
+            border: 1px solid var(--bs-border-color);
+            border-top: none;
+            padding: 15px 10px;
             width: 100%;
         }
     }
