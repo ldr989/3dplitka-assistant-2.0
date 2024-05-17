@@ -3,6 +3,7 @@ import Divider from "../divider/Divider";
 import TextHeader from "../textHeader/TextHeader";
 import TextSubHeader from "../textSubHeader/TextSubHeader";
 import ListItemBtnsGroup from "../listItemBtnsGroup/ListItemBtnsGroup";
+import TemplateAddForm from "../templateAddForm/TemplateAddForm";
 
 import "./propertyTemplates.scss";
 
@@ -54,6 +55,8 @@ const PropertyTemplates = () => {
                         />
                     </li>
                 </ul>
+                <TemplateAddForm />
+                <Divider margin={10} />
                 <div className="btn btn-sm btn-primary">Добавить</div>
             </div>
         </div>

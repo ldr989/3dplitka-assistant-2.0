@@ -1,5 +1,5 @@
-import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
+import SimpleAddForm from "../simpleAddForm/SimpleAddForm";
 
 import "./imagesAddForm.scss";
 
@@ -11,34 +11,23 @@ const Schema = Yup.object().shape({
         .required("Введите колличество"),
 });
 
+const initialValues = {
+    amount: "",
+};
+
+const foo = (values) => {
+    console.log(values);
+};
+
 const ImagesAddForm = () => {
     return (
-        <Formik
-            initialValues={{
-                amount: "",
-            }}
+        <SimpleAddForm
+            initialValues={initialValues}
             validationSchema={Schema}
-            onSubmit={(values) => {
-                console.log(values);
-            }}
-        >
-            {({ errors, touched }) => (
-                <Form className="imagesAddForm">
-                    <div className="imagesAddForm__controls input-group-sm">
-                        <Field className="form-control" name="amount" />
-                        <button className="btn btn-primary" type="submit">
-                            Добавить
-                        </button>
-                    </div>
-
-                    {errors.amount && touched.amount ? (
-                        <div className="imagesAddForm__error text-danger">
-                            {errors.amount}
-                        </div>
-                    ) : null}
-                </Form>
-            )}
-        </Formik>
+            submitFunc={foo}
+            fieldName={"amount"}
+            submitBtnText={"Добавить"}
+        />
     );
 };
 
