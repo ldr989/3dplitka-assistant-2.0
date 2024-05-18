@@ -6,7 +6,7 @@ import "./templateAddForm.scss";
 const Schema = Yup.object().shape({
     templateName: Yup.string()
         .min(2, "Слишком короткое название")
-        .max(26, "Слишком длинное название")
+        .max(20, "Слишком длинное название")
         .required("Введите название"),
 });
 

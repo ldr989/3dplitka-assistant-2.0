@@ -1,6 +1,6 @@
-import AddImages from "../../addImages/AddImages";
-import ImagesAddForm from "../../imagesAddForm/ImagesAddForm";
-import Divider from "../../divider/Divider";
+import AddImages from "./addImages/AddImages";
+import { ImagesAddForm } from "../../forms";
+import { Divider } from "../../common";
 
 const ImagesPage = () => {
     return (

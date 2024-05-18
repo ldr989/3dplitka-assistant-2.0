@@ -1,5 +1,4 @@
-import TextHeader from "../textHeader/TextHeader";
-import TextSubHeader from "../textSubHeader/TextSubHeader";
+import { TextHeader, TextSubHeader } from "../../../common";
 
 const AddImages = ({ header, subHeader, Form }) => {
     const mainHeader =

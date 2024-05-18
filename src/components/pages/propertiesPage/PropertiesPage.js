@@ -1,9 +1,13 @@
-import PropertyTemplates from "../../propertyTemplates/PropertyTemplates";
+import PropertyTemplatesList from "../propertyTemplatesList/PropertyTemplatesList";
+import SinglePropertiesTemplate from "../singlePropertiesTemplate/SinglePropertiesTemplate";
+import { TextHeader } from "../../common";
 
 const PropertiesPage = () => {
     return (
         <>
-            <PropertyTemplates />
+            <TextHeader text={"Шаблоны:"} className={"text-primary"} />
+            <PropertyTemplatesList />
+            <SinglePropertiesTemplate />
         </>
     );
 };

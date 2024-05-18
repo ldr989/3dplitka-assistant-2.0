@@ -1,5 +1,5 @@
 import AppHeader from "../appHeader/AppHeader";
-import Divider from "../divider/Divider";
+import { Divider } from "../common";
 import { PropertiesPage, ImagesPage } from "../pages";
 
 import "./app.css";

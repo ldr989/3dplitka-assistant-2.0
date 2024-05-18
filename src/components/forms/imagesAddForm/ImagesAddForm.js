@@ -7,8 +7,8 @@ const Schema = Yup.object().shape({
     amount: Yup.number()
         .typeError("Введите число")
         .min(1, "это слишком мало :)")
-        .max(50, "Воу воу палегше, не больше 50!")
-        .required("Введите колличество"),
+        .max(50, "Это слишком много, не больше 50!")
+        .required("Введите количество"),
 });
 
 const initialValues = {

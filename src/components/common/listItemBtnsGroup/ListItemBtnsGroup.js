@@ -1,4 +1,5 @@
 import "./listItemBtnsGroup.scss";
+
 const ListItemBtnsGroup = ({ editFunc, deleteFunc }) => {
     return (
         <div className="listItemBtnsGroup">

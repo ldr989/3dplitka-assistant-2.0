@@ -1,0 +1,33 @@
+.listOfItems {
+    li {
+        list-style-type: none;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+            font-size: 0.75rem;
+        }
+    }
+    &__item {
+        width: 80%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        &__name,
+        &__value {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.4rem;
+            border: 1px solid var(--bs-border-color);
+        }
+        &__name {
+            width: 64.5%;
+            color: var(--bs-primary);
+        }
+        &__value {
+            width: 35.5%;
+            color: var(--bs-secondary-color);
+        }
+    }
+}
