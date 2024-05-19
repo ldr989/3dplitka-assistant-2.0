@@ -1,10 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import Divider from "../divider/Divider";
 import ListItemBtnsGroup from "../listItemBtnsGroup/ListItemBtnsGroup";
 
 import "./listOfItems.scss";
 
-const ListOfItems = ({ dividerMargin, data }) => {
+const ListOfItems = ({ dividerMargin, data, nameTittle, valueTittle }) => {
     const getElement = (data) => {
         return data.map((item, i) => {
             const value = item.value;
@@ -18,7 +17,6 @@ const ListOfItems = ({ dividerMargin, data }) => {
 
             return (
                 <li key={i}>
-                    <Divider margin={dividerMargin} />
                     <div className="listOfItems__wrapper">
                         <div className="listOfItems__item">
                             <div className="listOfItems__item__name">
@@ -40,7 +38,18 @@ const ListOfItems = ({ dividerMargin, data }) => {
 
     return (
         <div className="listOfItems">
+            {/* <div className="listOfItems__wrapper">
+                <div className="listOfItems__tittles">
+                    <div className="listOfItems__tittles__name">
+                        {nameTittle}
+                    </div>
+                    <div className="listOfItems__tittles__value">
+                        {valueTittle}
+                    </div>
+                </div>
+            </div> */}
             <ul>{getElement(data)}</ul>
+            <div className="btn btn-sm btn-primary">Добавить</div>
         </div>
     );
 };
